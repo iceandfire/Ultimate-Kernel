@@ -1,18 +1,16 @@
 #!/bin/bash
 
 VERSION="v1.0.0.1"
-KERNEL_SRC="/usr/src/samsung-kernel-crespo"
+KERNEL_SRC="/home/iceandfire/apocalypse/samsung-kernel-crespo"
 
 export ARCH=arm
-export LOCALVERSION="-TalonNS"
-export CROSS_COMPILE="/opt/toolchains/android-toolchain-eabi-4.5_2011-07/bin/arm-eabi-"
+export LOCALVERSION="-Apoc-TalonV1-NS"
+export CROSS_COMPILE="/home/iceandfire/android-toolchain-eabi/bin/arm-eabi-"
 
 
 cd $KERNEL_SRC
 
 START=$(date +%s)
-
-make herring_defconfig
 
 if [ -e ./releasetools/system/modules ]; then
  rm -rf ./releasetools/system/modules
