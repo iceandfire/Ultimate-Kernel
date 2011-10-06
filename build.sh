@@ -1,10 +1,10 @@
 #!/bin/bash
 
-VERSION="v1.0.0.1"
+VERSION="v2.0"
 KERNEL_SRC="/home/iceandfire/apocalypse/samsung-kernel-crespo"
 
 export ARCH=arm
-export LOCALVERSION="-Apoc-TalonV1-NS"
+export LOCALVERSION="-Apoc-Talon-v2-NS"
 export CROSS_COMPILE="/home/iceandfire/android-toolchain-eabi/bin/arm-eabi-"
 
 
@@ -32,7 +32,7 @@ make -j`grep 'processor' /proc/cpuinfo | wc -l`
 cp $KERNEL_SRC/arch/arm/boot/zImage $KERNEL_SRC/releasetools/kernel/
 cd $KERNEL_SRC/releasetools
 rm -f *.zip
-zip -r TalonNS-$VERSION.zip *
+zip -r Apocalypse-TalonNS-$VERSION.zip *
 rm $KERNEL_SRC/releasetools/kernel/zImage
 
 cd $KERNEL_SRC
