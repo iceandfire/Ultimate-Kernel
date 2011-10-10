@@ -1,4 +1,4 @@
-ui_print("Installing Kernel");
+ui_print("Installing Apocalypse-Talon Kernel");
 ui_print("");ui_print("Extracting System Files...");
 show_progress(0.100000, 0);
 mount("ext4", "EMMC", "/dev/block/platform/s3c-sdhci.0/by-name/system", "/system");
