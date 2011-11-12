@@ -1,10 +1,10 @@
 #!/bin/bash
 
-VERSION="v2.2"
+VERSION="v4"
 KERNEL_SRC="/home/iceandfire/apocalypse/samsung-kernel-crespo"
 
 export ARCH=arm
-export LOCALVERSION="-Apoc-Talon-v2.2-NS"
+export LOCALVERSION="-Apoc-Talon-v4-NS"
 export CROSS_COMPILE="/home/iceandfire/android-toolchain-eabi/bin/arm-eabi-"
 
 
